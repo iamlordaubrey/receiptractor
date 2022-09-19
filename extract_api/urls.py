@@ -12,5 +12,5 @@ urlpatterns = [
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('token/verify/', TokenVerifyView.as_view(), name='token_verify'),
 
-    path('receipts/', views.ReceiptAPI.as_view()),
+    path('receipts/', views.ReceiptAPI.as_view(), name='receipts'),
 ]
