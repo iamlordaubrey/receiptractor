@@ -36,4 +36,4 @@ runserver:
 	test -r .env || make env
 	CI_BRANCH=$(CI_BRANCH) \
 	CI_COMMIT_ID=$(CI_COMMIT_ID) \
-	$(VENV)/bin/activate && ./manage.py runserver 0.0.0.0:9080
+	source $(VENV)/bin/activate && ./manage.py runserver 0.0.0.0:9080
