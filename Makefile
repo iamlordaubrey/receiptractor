@@ -38,5 +38,5 @@ runserver:
 	CI_COMMIT_ID=$(CI_COMMIT_ID) \
 	source $(VENV)/bin/activate && ./manage.py runserver 0.0.0.0:9080
 
-test:
+runtest:
 	CI_COMMIT_ID=$(CI_COMMIT_ID) $(VENV)/bin/python manage.py test --keepdb $(spec)
