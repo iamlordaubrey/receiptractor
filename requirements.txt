@@ -7,9 +7,17 @@
 asgiref==3.5.2
     # via django
 django==4.1.1
-    # via djangorestframework
+    # via
+    #   djangorestframework
+    #   djangorestframework-simplejwt
 djangorestframework==3.13.1
+    # via
+    #   -r requirements.in
+    #   djangorestframework-simplejwt
+djangorestframework-simplejwt==5.2.0
     # via -r requirements.in
+pyjwt==2.5.0
+    # via djangorestframework-simplejwt
 pytz==2022.2.1
     # via djangorestframework
 sqlparse==0.4.2
